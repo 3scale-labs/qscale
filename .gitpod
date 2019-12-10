@@ -1,0 +1,6 @@
+image: "gitpod/workspace-full"
+tasks:
+    - command: "bash startup.sh"
+ports:
+    - port: 8888
+      protocol: "http"
