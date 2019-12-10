@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -d $HOME/anaconda]; then
+if [ ! -d $HOME/anaconda ]; then
   wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
   bash Anaconda3-2019.10-Linux-x86_64.sh -b -p $HOME/anaconda
   $HOME/anaconda/bin/pip install qiskit
